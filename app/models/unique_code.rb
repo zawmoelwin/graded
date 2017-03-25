@@ -1,0 +1,2 @@
+class UniqueCode < ApplicationRecord
+end

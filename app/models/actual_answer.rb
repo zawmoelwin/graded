@@ -1,0 +1,2 @@
+class ActualAnswer < ApplicationRecord
+end
