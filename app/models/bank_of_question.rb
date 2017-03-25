@@ -1,0 +1,2 @@
+class BankOfQuestion < ApplicationRecord
+end
