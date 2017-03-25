@@ -10,9 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 20170325184952) do
-
+ActiveRecord::Schema.define(version: 20170325185943) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -151,18 +149,6 @@ ActiveRecord::Schema.define(version: 20170325184952) do
     t.index ["bank_of_question_id"], name: "index_possible_answers_on_bank_of_question_id", using: :btree
   end
 
-  create_table "students", force: :cascade do |t|
-    t.string   "name",       null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "teachers", force: :cascade do |t|
-    t.string   "name",       null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "tests", force: :cascade do |t|
     t.integer  "teacher_id",       null: false
     t.text     "question1",        null: false
@@ -282,6 +268,7 @@ ActiveRecord::Schema.define(version: 20170325184952) do
     t.integer  "test_id",     null: false
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
