@@ -8,7 +8,7 @@ class CreateActualAnswers < ActiveRecord::Migration[5.0]
 
   def create_multiple_columns(number_of_columns, t)
     1.upto(number_of_columns) do |num|
-      t.text( "question#{num}".to_sym, {null:false})
+      t.text( "answer_to_question#{num}".to_sym)
     end
   end
 end
