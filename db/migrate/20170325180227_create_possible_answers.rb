@@ -9,7 +9,7 @@ class CreatePossibleAnswers < ActiveRecord::Migration[5.0]
 
   def create_multiple_columns(number_of_columns, t)
     1.upto(number_of_columns) do |num|
-      t.string( "answer#{num}".to_sym, {null:false})
+      t.string( "possible_answer#{num}".to_sym)
     end
   end
 end
