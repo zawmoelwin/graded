@@ -1,0 +1,14 @@
+      create  app/controllers/user_controller.rb
+       route  get 'user/='
+       route  get 'user/:only'
+      invoke  erb
+      create    app/views/user
+      create    app/views/user/:only.html.erb
+      create    app/views/user/=.html.erb
+      invoke  helper
+      create    app/helpers/user_helper.rb
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/user.coffee
+      invoke    scss
+      create      app/assets/stylesheets/user.scss

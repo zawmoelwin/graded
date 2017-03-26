@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :users do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
+
   resources :test
   resources :questionbanks
   get "/takingtest" , to: 'taking#test', as: 'test_taking'
